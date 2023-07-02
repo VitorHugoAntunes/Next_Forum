@@ -22,6 +22,7 @@ export const lightTheme = createTheme('lightTheme', {
         primary: '#FFFFFF',
         secondary: '#3D5AF1',
         tertiary: '#6D83F4',
+        quaternary: '#B2BEF7',
         danger: '#8a0000',
     },
 
@@ -42,6 +43,7 @@ export const darkTheme = createTheme('darkTheme', {
         primary: '#303030',
         secondary: '#3D5AF1',
         tertiary: '#6D83F4',
+        quaternary: '#B2BEF7',
         danger: '#8a0000',
     },
 

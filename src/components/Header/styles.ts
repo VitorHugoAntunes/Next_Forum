@@ -6,9 +6,12 @@ export const HeaderContainer = styled('header', {
     padding: "1rem 0",
     background: "$primary",
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.05)",
+    position: "sticky",
+    top: 0,
+    zIndex: 999,
 
     "> div": {
-        width: "75%",
+        width: "80%",
         margin: "0 auto",
         display: "flex",
         alignItems: "center",
@@ -31,6 +34,7 @@ export const HeaderContainer = styled('header', {
 })
 
 export const SearchBar = styled('div', {
+    marginLeft: "7rem",
     width: "30rem",
     padding: "0.8rem 1rem",
     background: "$input",

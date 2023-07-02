@@ -19,7 +19,7 @@ export const globalStyles = globalCss({
 })
 
 export const MainContainer = styled('div', {
-  maxWidth: "75%",
+  maxWidth: "80%",
   maxHeight: "100%",
   margin: "0 auto",
 
