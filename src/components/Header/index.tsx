@@ -1,5 +1,6 @@
 import { ThemeContext } from "@/contexts/ThemeContext";
 import { darkTheme, lightTheme } from "@/styles/styles";
+import Link from "next/link";
 import { useContext, useEffect } from "react";
 import { FaAt, FaSearch, FaMoon, FaBell, FaUser } from 'react-icons/fa'
 
@@ -17,7 +18,9 @@ export default function Header() {
     return (
         <HeaderContainer className={theme === lightTheme.className ? lightTheme.className : darkTheme.className}>
             <div>
-                <FaAt size={24} className="logo" />
+                <Link href={"/"}>
+                    <FaAt size={24} className="logo" />
+                </Link>
 
                 <SearchBar>
                     <FaSearch size={18} />

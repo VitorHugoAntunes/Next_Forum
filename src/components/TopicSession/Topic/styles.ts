@@ -10,8 +10,12 @@ export const TopicContainer = styled('article', {
     border: "1px solid $primary",
     borderRadius: "4px",
     boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    transition: "border 0.2s",
     cursor: "pointer",
-    transition: "0.2s",
+
+    "&.mainTopic": {
+        cursor: "auto"
+    },
 
     svg: {
         color: "$text"
@@ -30,6 +34,41 @@ export const VotesDiv = styled('div', {
 
 export const TopicContent = styled('div', {
     borderBottom: "1px solid rgba(150, 150, 150, .1)",
+
+    "&.commentContent > div": {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+
+        a: {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "start",
+            gap: "1rem",
+            textDecoration: "none",
+            transition: "0.2s",
+
+            img: {
+                borderRadius: "50%"
+            },
+
+            h4: {
+                color: "$secondary"
+            },
+
+            "&:hover": {
+                opacity: "0.8"
+            }
+        },
+
+    },
+
+    "> div": {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+    },
+
     p: {
         margin: "0.8rem 0",
         fontSize: "90%",
@@ -67,5 +106,17 @@ export const TopicInfo = styled('div', {
         "svg": {
             marginRight: "0.5rem"
         }
+    }
+})
+
+export const CommentSection = styled('section', {
+    marginTop: "2rem",
+    borderRadius: "4px",
+
+    ".comment": {
+        background: "$background",
+        boxShadow: "none",
+        marginTop: "1rem",
+        cursor: "auto"
     }
 })

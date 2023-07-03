@@ -23,7 +23,8 @@ export const lightTheme = createTheme('lightTheme', {
         secondary: '#3D5AF1',
         tertiary: '#6D83F4',
         quaternary: '#B2BEF7',
-        danger: '#8a0000',
+        danger: '#ea0035',
+        confirm: '#1abb95',
     },
 
     fontSizes: {
@@ -44,7 +45,8 @@ export const darkTheme = createTheme('darkTheme', {
         secondary: '#3D5AF1',
         tertiary: '#6D83F4',
         quaternary: '#B2BEF7',
-        danger: '#8a0000',
+        danger: '#ea0035',
+        confirm: '#1abb95',
     },
 
     fontSizes: {

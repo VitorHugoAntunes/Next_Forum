@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import SideBar from "@/components/SideBar";
 import TopicSection from "@/components/TopicSession";
 import { HomeContainer } from "@/styles/pages/home";
 
@@ -7,7 +8,7 @@ export default function Home() {
         <HomeContainer>
             <Menu />
             <TopicSection />
-            <div>a</div>
+            <SideBar />
         </HomeContainer>
     )
 }

@@ -24,8 +24,13 @@ export const HeaderContainer = styled('header', {
         }
     },
 
-    ".logo": {
-        color: "$tertiary"
+    "a": {
+        display: "flex",
+        textDecoration: "none",
+
+        ".logo": {
+            color: "$tertiary"
+        },
     },
 
     svg: {

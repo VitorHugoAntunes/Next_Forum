@@ -1,10 +1,11 @@
 import { styled } from "@stitches/react";
 
-export const HomeContainer = styled('div', {
+export const TopicPageContainer = styled('div', {
     marginTop: "2rem",
     display: "grid",
     gridTemplateColumns: "1fr 3fr 1fr",
     columnGap: "3rem",
+    cursor: "auto",
 
     "> div, > section, > aside": {
         width: "100%",

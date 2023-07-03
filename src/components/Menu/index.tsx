@@ -18,7 +18,7 @@ export default function Menu() {
             </div>
 
             <Link
-                href={""}
+                href={"/"}
                 className={currentTab == 1 ? "active" : ""}
                 id='1'
                 onClick={() => changeCurrentTab(1)}
@@ -27,7 +27,7 @@ export default function Menu() {
                 <span>Home</span>
             </Link>
             <Link
-                href={""}
+                href={"/"}
                 className={currentTab == 2 ? "active" : ""}
                 id='2'
                 onClick={() => changeCurrentTab(2)}
@@ -36,7 +36,7 @@ export default function Menu() {
                 <span>Explore topics</span>
             </Link>
             <Link
-                href={""}
+                href={"/"}
                 className={currentTab == 3 ? "active" : ""}
                 id='3'
                 onClick={() => changeCurrentTab(3)}
@@ -45,7 +45,7 @@ export default function Menu() {
                 <span>My topics</span>
             </Link>
             <Link
-                href={""}
+                href={"/"}
                 className={currentTab == 4 ? "active" : ""}
                 id='4'
                 onClick={() => changeCurrentTab(4)}
