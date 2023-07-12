@@ -1,5 +1,7 @@
 import MainContainer from "@/components/MainContainer";
+import TopicModal from "@/components/TopicModal";
 import MainTopic from "@/components/TopicSession/MainTopic";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 import { useRouter } from "next/router"
 
 export default function TopicPage() {

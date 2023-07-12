@@ -1,9 +1,11 @@
-import { TopicSectionContainer } from "./styles";
+import { LoadingDiv, TopicSectionContainer } from "./styles";
 import Topic from "./Topic";
 
 import { topicsData } from '../../data/topics'
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+import { FaCircleNotch } from 'react-icons/fa'
 
 export default function TopicSection() {
     const [topicHasLoad, setTopicHasLoad] = useState(false);
@@ -12,13 +14,17 @@ export default function TopicSection() {
         setTopicHasLoad(true);
     }, [])
 
-    return topicHasLoad && (
+    return topicHasLoad === false ? (
+        <LoadingDiv>
+            <FaCircleNotch size={24} />
+            <span>Loading topics</span>
+        </LoadingDiv>
+    ) : (
         <TopicSectionContainer>
             {topicsData.map((topic) => (
 
                 <Link href={`/topic/${topic.id}`} key={topic.id} className={"topicLink"}>
                     <Topic
-
                         type={"topic"}
                         topicId={topic.id}
                         title={topic.title}

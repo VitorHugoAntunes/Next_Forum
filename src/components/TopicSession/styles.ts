@@ -10,3 +10,10 @@ export const TopicSectionContainer = styled('section', {
         textDecoration: "none"
     }
 })
+
+export const LoadingDiv = styled('div', {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "0.5rem"
+})

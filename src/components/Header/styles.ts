@@ -8,7 +8,6 @@ export const HeaderContainer = styled('header', {
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.05)",
     position: "sticky",
     top: 0,
-    zIndex: 999,
 
     "> div": {
         width: "80%",

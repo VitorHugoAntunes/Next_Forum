@@ -3,6 +3,7 @@ import { darkTheme, lightTheme } from "@/styles/styles";
 import Link from "next/link";
 import { useContext, useEffect } from "react";
 import { FaAt, FaSearch, FaMoon, FaBell, FaUser } from 'react-icons/fa'
+import TopicModal from "../TopicModal";
 
 import { HeaderActions, HeaderContainer, SearchBar } from './styles'
 
@@ -17,7 +18,7 @@ export default function Header() {
 
     return (
         <HeaderContainer className={theme === lightTheme.className ? lightTheme.className : darkTheme.className}>
-            <div>
+            <div className="headerNavigation">
                 <Link href={"/"}>
                     <FaAt size={24} className="logo" />
                 </Link>

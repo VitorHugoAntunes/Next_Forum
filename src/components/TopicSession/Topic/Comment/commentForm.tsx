@@ -1,20 +1,18 @@
 import { CommentFormContainer } from "./styles";
-
-import { FaRegTimesCircle } from 'react-icons/fa'
 import { TbSend } from 'react-icons/tb'
+import ButtonComponent from "@/components/Button";
 
 export default function CommentForm() {
     return (
         <CommentFormContainer>
             <input type="text" name="" id="" placeholder="reply..." />
-            <button className="cancel">
-                <FaRegTimesCircle size={18} />
+            <ButtonComponent category={"cancel"}>
                 Cancelar
-            </button>
-            <button className="confirm" type="submit">
+            </ButtonComponent>
+            <ButtonComponent category={"confirm"} type="submit">
                 <TbSend size={18} />
                 Enviar
-            </button>
+            </ButtonComponent>
         </CommentFormContainer>
     )
 }

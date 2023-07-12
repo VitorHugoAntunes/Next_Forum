@@ -1,27 +1,7 @@
 import { styled } from "@stitches/react";
 
 export const SideBarContainer = styled('aside', {
-    button: {
-        flex: 1,
-        width: "100%",
-        padding: "0.8rem",
-        background: "$secondary",
-        color: "$input",
-        border: "none",
-        borderRadius: "4px",
-        fontFamily: "Poppins, sans-serif",
-        fontWeight: "500",
-
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "0.5rem",
-        transition: "0.2s",
-
-        "&:hover": {
-            opacity: "0.8",
-        }
-    }
+    position: "relative",
 })
 
 export const TopUsersDiv = styled('div', {

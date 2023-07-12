@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import CategoryTag from "@/components/CategoryTag";
 
-import { categoriesData } from '../../../categories/data'
+import { categoriesData } from '../../../data/categories'
 import { topicsData } from "@/data/topics";
 import Comment from "./Comment";
 import { HTMLAttributes } from "react";
