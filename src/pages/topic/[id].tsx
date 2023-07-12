@@ -7,7 +7,7 @@ import { useRouter } from "next/router"
 export default function TopicPage() {
     const router = useRouter();
     const { id } = router.query;
-    const topicId = typeof id === 'string' ? parseInt(id) : undefined;
+    const topicId = id?.toString();
 
     if (typeof topicId === 'undefined') {
         // Tratar quando topicId for undefined, por exemplo, redirecionar para uma página de erro ou exibir uma mensagem de erro.

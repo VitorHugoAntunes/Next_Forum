@@ -13,8 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider>
       <TopicModalProvider>
         <Header />
-        <Component {...pageProps}>
-        </Component>
+        <Component {...pageProps} />
       </TopicModalProvider>
     </ThemeProvider>
   )

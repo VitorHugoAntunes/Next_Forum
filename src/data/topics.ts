@@ -1,6 +1,6 @@
 export const topicsData = [
     {
-        id: 1,
+        id: "4a9f8b9b-f173-4f84-8df5-e8765890ad5c",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 1,
@@ -11,7 +11,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "bcae66df-6ebb-44ae-81bb-ffcec69f97ca",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -19,7 +19,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "73fb8dfb-df8c-40a3-8df3-291e3186fc3e",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -29,7 +29,7 @@ export const topicsData = [
         ]
     },
     {
-        id: 2,
+        id: "78105729-5ee1-4f36-a36f-abc82e1d7c25",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 2,
@@ -40,7 +40,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "3498c03e-5762-445e-949e-cb3fe00cf5a2",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -48,7 +48,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "1349d197-f210-4f23-834b-46b2846a0d8a",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -58,7 +58,7 @@ export const topicsData = [
         ]
     },
     {
-        id: 3,
+        id: "f674f48a-efed-4fe9-b655-c8da7d56e3d4",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 3,
@@ -69,7 +69,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "10188791-cef8-4d0f-a2da-2a2c935f9a0e",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -77,7 +77,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "e028c82f-149c-49b2-8546-5370e9885b61",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -87,7 +87,7 @@ export const topicsData = [
         ]
     },
     {
-        id: 4,
+        id: "4779abf9-2d31-4b13-8076-bfdda1fd0f7d",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 4,
@@ -98,7 +98,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "db4f1fac-3d69-42a8-8417-7f5cd8eccdad",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -106,7 +106,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "ef7a30e3-503a-45e1-8b9a-bbbe6fe555d9",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -116,7 +116,7 @@ export const topicsData = [
         ]
     },
     {
-        id: 5,
+        id: "8663e71c-0de1-4a84-90e8-7ad2dac1c7b8",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 5,
@@ -127,7 +127,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "96e9ebc8-77a5-46b9-8002-eeed56cbf154",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -135,7 +135,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "a5a7d6f8-85ca-4f2a-89d8-968b57024c36",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -145,7 +145,7 @@ export const topicsData = [
         ]
     },
     {
-        id: 6,
+        id: "66a53264-7114-4030-89fc-faa95f816c22",
         title: "Topic title",
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         categoryId: 6,
@@ -156,7 +156,7 @@ export const topicsData = [
         totalComments: 50,
         comments: [
             {
-                id: 1,
+                id: "f25a673a-730f-4c4f-a60d-c321094fc4da",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",
@@ -164,7 +164,7 @@ export const topicsData = [
                 votes: 56,
             },
             {
-                id: 2,
+                id: "3deeadd6-07c7-431b-9a50-e975ffb51003",
                 content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                 author: "John Doe",
                 profilePicture: "",

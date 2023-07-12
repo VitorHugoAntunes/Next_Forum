@@ -23,6 +23,6 @@ export const HomeContainer = styled('div', {
     },
 
     "> aside:": {
-        background: "none"
+        background: "none",
     },
 })

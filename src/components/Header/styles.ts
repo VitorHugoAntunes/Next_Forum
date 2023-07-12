@@ -8,6 +8,7 @@ export const HeaderContainer = styled('header', {
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.05)",
     position: "sticky",
     top: 0,
+    zIndex: 1,
 
     "> div": {
         width: "80%",
@@ -62,14 +63,22 @@ export const HeaderActions = styled('nav', {
     display: "flex",
     gap: "2rem",
 
-    button: {
+    "button": {
         background: "none",
         border: "none",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+
+        "&:hover": {
+            opacity: "0.8"
+        },
+
+        "&.active > svg": {
+            color: "$title"
+        }
     },
 
-    div: {
+    "> div": {
         padding: "0.5rem",
         border: "1px solid $text",
         borderRadius: "50%",

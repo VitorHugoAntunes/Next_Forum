@@ -5,8 +5,8 @@ export const Overlay = styled("div", {
     width: "100vw",
     height: "100vh",
     inset: 0, // top 0 left 0 bottom 0 right 0
-    zIndex: 999,
     background: "rgba(0, 0, 0, 0.75)",
+    zIndex: 999
 })
 
 const contentShow = keyframes({
@@ -28,7 +28,6 @@ export const Content = styled("div", {
     padding: "1.5rem",
 
     position: "fixed",
-    zIndex: 999,
 
     // To center the content
     top: "50%",

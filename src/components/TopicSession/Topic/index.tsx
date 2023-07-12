@@ -14,7 +14,7 @@ import CommentActions from "./Comment/commentActions";
 import CommentForm from "./Comment/commentForm";
 
 interface TopicProps extends HTMLAttributes<HTMLDivElement> {
-    topicId: number,
+    topicId: string,
     title: string,
     content: string,
     categoryId: number,
@@ -28,6 +28,7 @@ interface TopicProps extends HTMLAttributes<HTMLDivElement> {
 
 export default function Topic({ topicId, type, title, content, categoryId, totalComments, author, votes, hasComments, hasForm, ...rest }: TopicProps) {
     const router = useRouter();
+    const currentTopic = topicsData.find((topic) => topic.id === topicId)
 
     return (
         <TopicContainer className={type === 'comment' ? 'comment' : 'topic'} {...rest}>
@@ -72,15 +73,15 @@ export default function Topic({ topicId, type, title, content, categoryId, total
 
                 {hasComments === true && (
                     <CommentSection>
-                        {topicsData[topicId - 1].comments.map((comment) => (
+                        {currentTopic!.comments.map((comment) => (
                             <Comment
                                 key={comment.id}
                                 type={"comment"}
-                                commentId={topicsData[topicId - 1].comments[comment.id - 1].id}
-                                topicId={topicsData[topicId - 1].id}
-                                author={topicsData[topicId - 1].comments[comment.id - 1].author}
-                                content={topicsData[topicId - 1].comments[comment.id - 1].content}
-                                votes={topicsData[topicId - 1].comments[comment.id - 1].votes}
+                                commentId={comment.id}
+                                topicId={currentTopic!.id}
+                                author={comment.author}
+                                content={comment.content}
+                                votes={comment.votes}
                             />
                         ))}
                     </CommentSection>

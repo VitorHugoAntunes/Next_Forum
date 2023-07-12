@@ -5,24 +5,26 @@ import { TopicPageContainer } from "@/styles/pages/topic";
 import Topic from "../Topic";
 
 interface MainTopicProps {
-    topicId: number,
+    topicId: string,
 }
 
 export default function MainTopic({ topicId }: MainTopicProps) {
+    const mainTopic = topicsData.find((topic) => topic.id === topicId)
+
     return (
         <TopicPageContainer>
             <Menu />
             <Topic
                 className={"mainTopic"}
-                key={topicsData[topicId! - 1].id}
+                key={mainTopic!.id}
                 type={"topic"}
-                topicId={topicsData[topicId! - 1].id}
-                title={topicsData[topicId! - 1].title}
-                content={topicsData[topicId! - 1].content}
-                author={topicsData[topicId! - 1].author}
-                categoryId={topicsData[topicId! - 1].categoryId}
-                votes={topicsData[topicId! - 1].votes}
-                totalComments={topicsData[topicId! - 1].totalComments}
+                topicId={mainTopic!.id}
+                title={mainTopic!.title}
+                content={mainTopic!.content}
+                author={mainTopic!.author}
+                categoryId={mainTopic!.categoryId}
+                votes={mainTopic!.votes}
+                totalComments={mainTopic!.totalComments}
                 hasComments={true}
                 hasForm={true}
             />

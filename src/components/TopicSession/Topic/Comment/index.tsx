@@ -7,8 +7,8 @@ import Link from "next/link";
 import CommentForm from "./commentForm";
 
 interface CommentProps {
-    topicId: number,
-    commentId: number,
+    topicId: string,
+    commentId: string,
     content: string,
     author: string,
     votes: number,

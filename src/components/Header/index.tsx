@@ -1,14 +1,23 @@
 import { ThemeContext } from "@/contexts/ThemeContext";
+import { TopicModalContext } from "@/contexts/TopicModalContext";
 import { darkTheme, lightTheme } from "@/styles/styles";
 import Link from "next/link";
-import { useContext, useEffect } from "react";
-import { FaAt, FaSearch, FaMoon, FaBell, FaUser } from 'react-icons/fa'
+import { useContext, useEffect, useState } from "react";
+import { FaAt, FaSearch, FaMoon, FaBell, FaUser, FaSun } from 'react-icons/fa'
+import Notifications from "../Notifications";
 import TopicModal from "../TopicModal";
 
 import { HeaderActions, HeaderContainer, SearchBar } from './styles'
 
 export default function Header() {
     const { changeThemeStatus, theme } = useContext(ThemeContext);
+    const { isModalOpen } = useContext(TopicModalContext);
+    const [isNotificationsOpen, setIsNotificationsOpen] = useState<boolean>(false);
+
+    // Funcao que altera se o container de notificacoes esta aberto ou fechado
+    function changeNotificationsDivStatus() {
+        isNotificationsOpen === true ? setIsNotificationsOpen(false) : setIsNotificationsOpen(true);
+    }
 
     useEffect(() => {
         theme === lightTheme.className ?
@@ -17,7 +26,10 @@ export default function Header() {
     }, [theme]);
 
     return (
-        <HeaderContainer className={theme === lightTheme.className ? lightTheme.className : darkTheme.className}>
+        <HeaderContainer
+            className={theme === lightTheme.className ? lightTheme.className : darkTheme.className}
+            style={isModalOpen ? { zIndex: 0 } : {}}
+        >
             <div className="headerNavigation">
                 <Link href={"/"}>
                     <FaAt size={24} className="logo" />
@@ -29,13 +41,27 @@ export default function Header() {
                 </SearchBar>
 
                 <HeaderActions>
-                    <button onClick={changeThemeStatus}>
-                        <FaMoon size={18} />
+                    <button
+                        title="Switch theme"
+                        onClick={changeThemeStatus}
+                    >
+                        {theme === 'lightTheme' ? (
+                            <FaMoon size={18} />
+                        ) : (
+                            <FaSun size={18} />
+                        )}
                     </button>
-                    <button>
+                    <button
+                        title="Notifications"
+                        className={isNotificationsOpen ? "active" : ""}
+                        onClick={changeNotificationsDivStatus}
+                    >
                         <FaBell size={18} />
                     </button>
 
+                    {isNotificationsOpen && (
+                        <Notifications />
+                    )}
 
                     <div>
                         <button>
